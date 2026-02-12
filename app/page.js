@@ -5,7 +5,6 @@ import useCalculator from "./hooks/useCalculator";
 export default function Home() {
   const {
     expression,
-    result,
     handleButtonClick,
     calculate,
     clear,
@@ -19,7 +18,7 @@ export default function Home() {
           {/* monitor */}
           <div className="h-28 bg-slate-950/50 rounded-2xl border border-slate-800 p-6 flex flex-col justify-end items-end shadow-inner">
             <h1 className="text-5xl font-semibold text-slate-100 tracking-tight">
-              {result || expression || 0}
+              {expression || 0}
             </h1>
           </div>
 
