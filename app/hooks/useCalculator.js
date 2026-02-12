@@ -29,7 +29,7 @@ export default function useCalculator() {
       const calculatedResult = evaluate(expression);
       setResult(calculatedResult.toString());
       setExpression(calculatedResult.toString());
-    } catch (error) {
+    } catch {
       setResult("Error");
     }
   };
